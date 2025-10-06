@@ -19,6 +19,7 @@ from Ecommerce_Backend.settings import EMAIL_HOST_USER
 
 User = get_user_model()
 
+
 class UserRegistrationView(APIView):
     def post(self,request):
         serializer = UserRegistrationSerializer(data=request.data)

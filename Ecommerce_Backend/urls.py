@@ -18,7 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 api_urlpatterns = [
-    path("", include("users.urls"))
+    path("", include("users.urls")),
+    path("", include("categories.urls")),
 ]
 
 urlpatterns = [
