@@ -1,4 +1,4 @@
-
+import os
 from pathlib import Path
 from datetime import timedelta
 
@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     # Apps
     'users',
     'categories',
+    'products',
 
 
     # Rest-Framework
@@ -148,3 +149,8 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True 
 EMAIL_HOST_USER = 'amajonshops@gmail.com' 
 EMAIL_HOST_PASSWORD = 'laji cwwc efat hdpp'
+
+
+# image settings
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
